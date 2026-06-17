@@ -28,129 +28,255 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmExpendedor));
             groupBox1 = new GroupBox();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
+            lblVuala = new Label();
+            lblLeche = new Label();
+            lblPay = new Label();
+            lblPoki = new Label();
+            picVuala = new PictureBox();
+            picYomi = new PictureBox();
+            picPay = new PictureBox();
+            picPoki = new PictureBox();
             groupBox2 = new GroupBox();
-            label5 = new Label();
-            comboBox1 = new ComboBox();
-            label6 = new Label();
+            btnPagar = new Button();
+            txtPago = new TextBox();
+            label1 = new Label();
+            lblTotal = new Label();
+            lblCantidad = new Label();
             numericUpDown1 = new NumericUpDown();
+            lblPrecio = new Label();
+            lblProducto = new Label();
+            groupBox3 = new GroupBox();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picVuala).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picYomi).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picPay).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picPoki).BeginInit();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Font = new Font("Consolas", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox1.BackColor = Color.LavenderBlush;
+            groupBox1.Controls.Add(lblVuala);
+            groupBox1.Controls.Add(lblLeche);
+            groupBox1.Controls.Add(lblPay);
+            groupBox1.Controls.Add(lblPoki);
+            groupBox1.Controls.Add(picVuala);
+            groupBox1.Controls.Add(picYomi);
+            groupBox1.Controls.Add(picPay);
+            groupBox1.Controls.Add(picPoki);
+            groupBox1.Font = new Font("Consolas", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox1.Location = new Point(1, 78);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(489, 548);
+            groupBox1.Size = new Size(452, 548);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Productos Disponible";
+            groupBox1.Text = "   Productos Disponibles";
             // 
-            // label4
+            // lblVuala
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(11, 250);
-            label4.Name = "label4";
-            label4.Size = new Size(315, 33);
-            label4.TabIndex = 3;
-            label4.Text = "Gomitas $25 Stock: 1";
+            lblVuala.AutoSize = true;
+            lblVuala.Font = new Font("Consolas", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblVuala.Location = new Point(247, 471);
+            lblVuala.Name = "lblVuala";
+            lblVuala.Size = new Size(90, 27);
+            lblVuala.TabIndex = 6;
+            lblVuala.Text = "Stock:";
             // 
-            // label3
+            // lblLeche
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(11, 199);
-            label3.Name = "label3";
-            label3.Size = new Size(330, 33);
-            label3.TabIndex = 2;
-            label3.Text = "Barritas $18 Stock: 8";
+            lblLeche.AutoSize = true;
+            lblLeche.Font = new Font("Consolas", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLeche.Location = new Point(45, 471);
+            lblLeche.Name = "lblLeche";
+            lblLeche.Size = new Size(90, 27);
+            lblLeche.TabIndex = 5;
+            lblLeche.Text = "Stock:";
             // 
-            // label2
+            // lblPay
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(11, 146);
-            label2.Name = "label2";
-            label2.Size = new Size(420, 33);
-            label2.TabIndex = 1;
-            label2.Text = "Chocolate Nugs $15 Stock: 3";
+            lblPay.AutoSize = true;
+            lblPay.Font = new Font("Consolas", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPay.Location = new Point(247, 253);
+            lblPay.Name = "lblPay";
+            lblPay.Size = new Size(90, 27);
+            lblPay.TabIndex = 5;
+            lblPay.Text = "Stock:";
+            // 
+            // lblPoki
+            // 
+            lblPoki.AutoSize = true;
+            lblPoki.Font = new Font("Consolas", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPoki.Location = new Point(45, 253);
+            lblPoki.Name = "lblPoki";
+            lblPoki.Size = new Size(90, 27);
+            lblPoki.TabIndex = 4;
+            lblPoki.Text = "Stock:";
+            // 
+            // picVuala
+            // 
+            picVuala.Image = (Image)resources.GetObject("picVuala.Image");
+            picVuala.Location = new Point(230, 325);
+            picVuala.Name = "picVuala";
+            picVuala.Size = new Size(202, 143);
+            picVuala.SizeMode = PictureBoxSizeMode.StretchImage;
+            picVuala.TabIndex = 3;
+            picVuala.TabStop = false;
+            // 
+            // picYomi
+            // 
+            picYomi.Image = (Image)resources.GetObject("picYomi.Image");
+            picYomi.Location = new Point(47, 325);
+            picYomi.Name = "picYomi";
+            picYomi.Size = new Size(151, 143);
+            picYomi.SizeMode = PictureBoxSizeMode.StretchImage;
+            picYomi.TabIndex = 2;
+            picYomi.TabStop = false;
+            // 
+            // picPay
+            // 
+            picPay.Image = (Image)resources.GetObject("picPay.Image");
+            picPay.Location = new Point(247, 102);
+            picPay.Name = "picPay";
+            picPay.Size = new Size(151, 143);
+            picPay.SizeMode = PictureBoxSizeMode.StretchImage;
+            picPay.TabIndex = 1;
+            picPay.TabStop = false;
+            // 
+            // picPoki
+            // 
+            picPoki.ErrorImage = (Image)resources.GetObject("picPoki.ErrorImage");
+            picPoki.Image = (Image)resources.GetObject("picPoki.Image");
+            picPoki.Location = new Point(47, 102);
+            picPoki.Name = "picPoki";
+            picPoki.Size = new Size(151, 143);
+            picPoki.SizeMode = PictureBoxSizeMode.StretchImage;
+            picPoki.TabIndex = 0;
+            picPoki.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            groupBox2.BackColor = Color.MistyRose;
+            groupBox2.Controls.Add(btnPagar);
+            groupBox2.Controls.Add(txtPago);
+            groupBox2.Controls.Add(label1);
+            groupBox2.Controls.Add(lblTotal);
+            groupBox2.Controls.Add(lblCantidad);
+            groupBox2.Controls.Add(numericUpDown1);
+            groupBox2.Controls.Add(lblPrecio);
+            groupBox2.Controls.Add(lblProducto);
+            groupBox2.Font = new Font("Consolas", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            groupBox2.Location = new Point(459, 78);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(450, 548);
+            groupBox2.TabIndex = 1;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "     Realizar Compra";
+            // 
+            // btnPagar
+            // 
+            btnPagar.BackColor = Color.LightSalmon;
+            btnPagar.Font = new Font("Consolas", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnPagar.Location = new Point(170, 471);
+            btnPagar.Name = "btnPagar";
+            btnPagar.Size = new Size(145, 51);
+            btnPagar.TabIndex = 8;
+            btnPagar.Text = "Comprar";
+            btnPagar.UseVisualStyleBackColor = false;
+            // 
+            // txtPago
+            // 
+            txtPago.Location = new Point(19, 372);
+            txtPago.Name = "txtPago";
+            txtPago.Size = new Size(220, 39);
+            txtPago.TabIndex = 7;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(11, 98);
+            label1.Font = new Font("Consolas", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(19, 342);
             label1.Name = "label1";
-            label1.Size = new Size(315, 33);
-            label1.TabIndex = 0;
-            label1.Text = "Doritos $20 Stock: 5";
+            label1.Size = new Size(220, 27);
+            label1.TabIndex = 6;
+            label1.Text = "Ingrese el pago:";
             // 
-            // groupBox2
+            // lblTotal
             // 
-            groupBox2.Controls.Add(numericUpDown1);
-            groupBox2.Controls.Add(label6);
-            groupBox2.Controls.Add(comboBox1);
-            groupBox2.Controls.Add(label5);
-            groupBox2.Font = new Font("Consolas", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox2.Location = new Point(496, 78);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(489, 548);
-            groupBox2.TabIndex = 1;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Realizar Compra";
+            lblTotal.AutoSize = true;
+            lblTotal.Font = new Font("Consolas", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTotal.Location = new Point(19, 273);
+            lblTotal.Name = "lblTotal";
+            lblTotal.Size = new Size(194, 27);
+            lblTotal.TabIndex = 5;
+            lblTotal.Text = "Total a Pagar:";
             // 
-            // label5
+            // lblCantidad
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(19, 73);
-            label5.Name = "label5";
-            label5.Size = new Size(345, 33);
-            label5.TabIndex = 0;
-            label5.Text = "Selecciona el producto";
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(26, 116);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(338, 40);
-            comboBox1.TabIndex = 1;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(19, 189);
-            label6.Name = "label6";
-            label6.Size = new Size(345, 33);
-            label6.TabIndex = 2;
-            label6.Text = "Selecciona la cantidad";
+            lblCantidad.AutoSize = true;
+            lblCantidad.Font = new Font("Consolas", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblCantidad.Location = new Point(19, 181);
+            lblCantidad.Name = "lblCantidad";
+            lblCantidad.Size = new Size(246, 27);
+            lblCantidad.TabIndex = 4;
+            lblCantidad.Text = "Elija la Cantidad:";
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(26, 232);
+            numericUpDown1.Location = new Point(19, 211);
             numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(338, 39);
+            numericUpDown1.Size = new Size(233, 39);
             numericUpDown1.TabIndex = 3;
+            // 
+            // lblPrecio
+            // 
+            lblPrecio.AutoSize = true;
+            lblPrecio.Font = new Font("Consolas", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPrecio.Location = new Point(19, 118);
+            lblPrecio.Name = "lblPrecio";
+            lblPrecio.Size = new Size(103, 27);
+            lblPrecio.TabIndex = 2;
+            lblPrecio.Text = "Precio:";
+            // 
+            // lblProducto
+            // 
+            lblProducto.AutoSize = true;
+            lblProducto.Font = new Font("Consolas", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblProducto.Location = new Point(19, 73);
+            lblProducto.Name = "lblProducto";
+            lblProducto.Size = new Size(129, 27);
+            lblProducto.TabIndex = 0;
+            lblProducto.Text = "Producto:";
+            // 
+            // groupBox3
+            // 
+            groupBox3.BackColor = Color.Thistle;
+            groupBox3.ForeColor = Color.Thistle;
+            groupBox3.Location = new Point(1, -2);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(908, 79);
+            groupBox3.TabIndex = 2;
+            groupBox3.TabStop = false;
             // 
             // FrmExpendedor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(984, 626);
+            ClientSize = new Size(909, 626);
+            Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Name = "FrmExpendedor";
             Text = "Form1";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picVuala).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picYomi).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picPay).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picPoki).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
@@ -161,13 +287,22 @@
 
         private GroupBox groupBox1;
         private GroupBox groupBox2;
-        private Label label2;
-        private Label label1;
-        private Label label3;
-        private Label label4;
         private NumericUpDown numericUpDown1;
-        private Label label6;
-        private ComboBox comboBox1;
-        private Label label5;
+        private Label lblPrecio;
+        private Label lblProducto;
+        private GroupBox groupBox3;
+        private PictureBox picPoki;
+        private PictureBox picVuala;
+        private PictureBox picYomi;
+        private PictureBox picPay;
+        private Label lblVuala;
+        private Label lblLeche;
+        private Label lblPay;
+        private Label lblPoki;
+        private Label lblCantidad;
+        private Label label1;
+        private Label lblTotal;
+        private Button btnPagar;
+        private TextBox txtPago;
     }
 }
