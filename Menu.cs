@@ -13,10 +13,10 @@ namespace Maquina_Expendedora
         public Menu()
         {
             productos = new List<Producto>();
-            productos.Add(new Producto("Poki", 15.50, 10));
-            productos.Add(new Producto("Pay", 12.00, 8));
-            productos.Add(new Producto("Yomi", 18.75, 5));
-            productos.Add(new Producto("Vuala", 22.30, 6));
+            productos.Add(new Producto("Poki", 18.20, 8));
+            productos.Add(new Producto("Pay", 25.00, 5));
+            productos.Add(new Producto("Yomi", 18.75, 12));
+            productos.Add(new Producto("Vuala", 27.30, 6));
         }
 
         public List<Producto> ObeteProductos()
@@ -24,7 +24,7 @@ namespace Maquina_Expendedora
             return productos;
         }
 
-        public Producto? ProductoSelect(string nombre)
+        public Producto ProductoSelect(string nombre)
         {
             foreach (Producto p in productos)
             {
@@ -33,7 +33,7 @@ namespace Maquina_Expendedora
                     return p;
                 }
             }
-            return null;
+            return new Producto("NoEncontrado", 0, 0); ;
         }
     }
 }

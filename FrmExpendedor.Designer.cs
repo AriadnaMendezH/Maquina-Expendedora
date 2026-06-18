@@ -125,6 +125,7 @@
             picVuala.SizeMode = PictureBoxSizeMode.StretchImage;
             picVuala.TabIndex = 3;
             picVuala.TabStop = false;
+            picVuala.Click += picVuala_Click;
             // 
             // picYomi
             // 
@@ -135,6 +136,7 @@
             picYomi.SizeMode = PictureBoxSizeMode.StretchImage;
             picYomi.TabIndex = 2;
             picYomi.TabStop = false;
+            picYomi.Click += picYomi_Click_1;
             // 
             // picPay
             // 
@@ -145,6 +147,7 @@
             picPay.SizeMode = PictureBoxSizeMode.StretchImage;
             picPay.TabIndex = 1;
             picPay.TabStop = false;
+            picPay.Click += picPay_Click_1;
             // 
             // picPoki
             // 
@@ -156,6 +159,7 @@
             picPoki.SizeMode = PictureBoxSizeMode.StretchImage;
             picPoki.TabIndex = 0;
             picPoki.TabStop = false;
+            picPoki.Click += picPoki_Click_1;
             // 
             // groupBox2
             // 
@@ -186,6 +190,7 @@
             btnPagar.TabIndex = 8;
             btnPagar.Text = "Comprar";
             btnPagar.UseVisualStyleBackColor = false;
+            btnPagar.Click += btnPagar_Click;
             // 
             // txtPago
             // 
@@ -230,6 +235,7 @@
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(233, 39);
             numericUpDown1.TabIndex = 3;
+            numericUpDown1.ValueChanged += numericUpDown1_ValueChanged_1;
             // 
             // lblPrecio
             // 
